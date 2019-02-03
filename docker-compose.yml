@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+  taxa-build:
+    image: golang:1.10
+    working_dir: /app/taxa
+    entrypoint: /docker-entrypoint-dev.sh
+    command: build/go/build.sh
+    volumes:
+      - ./build/go/docker-entrypoint-dev.sh:/docker-entrypoint-dev.sh:ro
+      - .:/app/taxa:rw
+
+  taxa:
+    image: hub.docker.com/r/ame421/nburunova/navi/taxa-app:${IMAGE_VERSION-''}
+    working_dir: /app
+    build:
+      context: .
+      dockerfile: build/go/Dockerfile

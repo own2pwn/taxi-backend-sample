@@ -1,0 +1,26 @@
+{
+  "coefficient": 1,
+  "coefficientEncode": "em02Nmg5SU53YkIrZjJGNDUzZ3Vzdz09",
+  "prices": [
+      {
+          "id_tariff": "644",
+          "id_tariff_group": 2,
+          "label": "174₽ фикс. В пути ~8 мин",
+          "total_price": 449,
+          "price": 174,
+          "new_user_discount": false,
+          "has_discount": false,
+          "fixed_price": true,
+          "coefficient": 1.2,
+          "show_coefficient_lightning": true
+      }
+  ],
+  "id_calculation": "b551e0e8a5e75031936ba71a8faf8f27",
+  "duration_text": "8 мин",
+  "distance_text": "4 км",
+  "route": {
+      "distance": 3626,
+      "duration": 491,
+      "points": "wlhsIq|tdFIs@GiCy@Xg@J]NaAr@oHjL[q@D]HWzDiGzCyE`AmAdAi@l@IrBA|@HtCl@fAVd@F\\DNJ|Ah@bAVlAb@fCp@LmB\\sCfA_H~EeYb@cBPa@d@WhAeBXYMaAa@s@iBqB[a@M[Sq@WaB_@cEU}BYgDQaAI_Ac@qDg@sEGy@[kGOoFOuEA[FEBEDKHw@@}@MaBa@wHOgCDWHSXc@h@Bt@FPPVLdFf@d@FP[BG?YMy@wBMoCYMBONKAMA@o@Dq@H]z@mCJSHGRCb@AjA@E~A`@@"
+  }
+}

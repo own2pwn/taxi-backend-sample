@@ -1,0 +1,19 @@
+phantom:
+  address: taxa-perf.web-staging.com:80
+  headers:
+    - "Host: taxa-perf.web-staging.com"
+  load_profile:
+    load_type: rps
+    schedule: line(1, 50, 10s) const(50, 60s)
+  ammo_type: uripost
+  ammofile: ammo.txt
+
+core:
+  artifacts_dir: logs/load-test
+
+json_report:
+  enabled: false
+overload:
+  enabled: false
+telegraf:
+  enabled: false

@@ -1,0 +1,28 @@
+{
+    "query": {
+        "output": "simple",
+        "points": [
+            {
+                "type": "stop",
+                "x": 30.544825,
+                "y": 50.443759
+            },
+            {
+                "type": "stop",
+                "x": 30.518475,
+                "y": 50.439031
+            }
+        ],
+        "type": "jam"
+    },
+    "result": [
+        {
+            "duration": 720,
+            "landmark": "Мечнікова",
+            "length": 3474,
+            "traffic": "normal",
+            "type": "traffic"
+        }
+    ],
+    "type": "result"
+}

@@ -1,0 +1,30 @@
+{
+  "prices": [
+      {
+          "localized_display_name": "Black",
+          "distance": 4.88,
+          "display_name": "Black",
+          "product_id": "17962f9a-4392-4260-97b0-d838dc7bb0df",
+          "high_estimate": 75,
+          "surge_multiplier": 1,
+          "minimum": 20,
+          "low_estimate": 65,
+          "duration": 960,
+          "estimate": "AED65-76",
+          "currency_code": "AED"
+      },
+      {
+          "localized_display_name": "Select",
+          "distance": 4.88,
+          "display_name": "Select",
+          "product_id": "7e7eda63-d2bc-474d-9988-e03bef2320d8",
+          "high_estimate": 60,
+          "surge_multiplier": 1,
+          "minimum": 15,
+          "low_estimate": 52,
+          "duration": 960,
+          "estimate": "AED52-60",
+          "currency_code": "AED"
+      }
+  ]
+}

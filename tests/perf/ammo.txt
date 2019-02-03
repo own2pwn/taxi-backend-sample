@@ -1,0 +1,13 @@
+164 /taksa/api/1.0/route/calculate
+{
+  "region_id": 32,
+  "point1": {
+    "lon": 37.610621,
+    "lat": 55.750376
+  },
+  "point2": {
+    "lon": 37.62002,
+    "lat": 55.760736
+  },
+  "only_api": true
+}

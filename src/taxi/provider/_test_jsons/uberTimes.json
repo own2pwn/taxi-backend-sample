@@ -1,0 +1,16 @@
+{
+  "times": [
+      {
+          "localized_display_name": "Black",
+          "estimate": 360,
+          "display_name": "Black",
+          "product_id": "17962f9a-4392-4260-97b0-d838dc7bb0df"
+      },
+      {
+          "localized_display_name": "Select",
+          "estimate": 60,
+          "display_name": "Select",
+          "product_id": "7e7eda63-d2bc-474d-9988-e03bef2320d8"
+      }
+  ]
+}

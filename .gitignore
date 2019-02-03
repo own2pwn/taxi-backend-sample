@@ -1,0 +1,5 @@
+/.vscode/launch.json
+.idea
+src/cmd/api/debug
+tests/perf/*.log
+tests/perf/logs

@@ -1,0 +1,66 @@
+version: 1
+
+jobs:
+- reports:
+    create:
+      project-id: 10
+      output-id-file: report-id.txt
+      report:
+        scm:
+          vcs:
+            reference: {{env "CI_COMMIT_REF_NAME"}}
+            revision: {{env "CI_COMMIT_SHA"}}
+            title: "{{env "CI_COMMIT_TITLE"}}"
+        links:
+        - label: Pipeline
+          url: https://github.com/nburunova/taxi-backend-sample/pipelines/{{env "CI_PIPELINE_ID"}}
+        - label: Apps
+          url: {{file "logs/grafana-apps.txt"}}
+        - label: Servers
+          url: {{file "logs/grafana-servers.txt"}}
+- logs:
+    upload:
+      type: phantom
+      project-id: 10
+      dir: logs/capacity-test
+      build:
+        env: CapacityTest
+        scm:
+          parameters:
+            load profile: line(1, 300, 10s) instances
+      assertions:
+      - metric: tt
+        selector: avg
+        condition: gte
+        expected: 70
+      - metric: erat
+        selector: sum
+        condition: lte
+        expected: 0.5
+      follow-status: true
+      report-id-file: report-id.txt
+- logs:
+    upload:
+      type: phantom
+      project-id: 10
+      dir: logs/load-test
+      build:
+        env: LoadTest
+        scm:
+          parameters:
+            load profile: const(50, 60s) RPS
+      assertions:
+      - metric: tt
+        selector: avg
+        condition: gte
+        expected: 40
+      - metric: err
+        selector: sum
+        condition: eq
+        expected: 0
+      - metric: rt
+        selector: p95
+        condition: lte
+        expected: 1300
+      follow-status: true
+      report-id-file: report-id.txt

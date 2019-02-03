@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "code": 200,
+        "api_version": "2.0.435.4",
+        "issue_date": "20181005"
+    },
+    "result": {
+        "total": 14,
+        "items": [
+            {
+                "purpose_name": "Административное здание",
+                "name": "name field second priority",
+                "full_name": "Москва, Манежная, 7 ст3",
+                "context": {
+                    "dist": 0,
+                    "distance": 0
+                },
+                "id": "4504235282808649",
+                "address_name": "",
+                "type": "building",
+                "geometry": {
+                    "centroid": "POINT(37.61077 55.750524)"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Fast": false,
+    "Vendor": true,
+    "DisableAll": true,
+    "Enable": ["gocyclo", "ineffassign", "golint", "misspell", "lll", "gofmt"],
+    "Exclude": ["test", "lookup.go", "lookup_unix.go"],
+    "VendoredLinters": true,
+    "Concurrency": 2,
+    "Deadline": "300s",
+    "LineLength": 140,
+    "Debug": false,
+    "Cyclo": 10
+}
+

@@ -1,0 +1,20 @@
+{
+    "prices": [
+        {
+            "product_id": "e9e71379-7d5a-4930-899c-996b83616f87",
+            "display_name": "Комфорт",
+            "estimate": "₽250-288",
+            "currency": "RUB",
+            "low_estimate": 100,
+            "high_estimate": 300
+        },
+        {
+            "product_id": "6e31c74c-388b-4b84-a362-5048cfc6aa98",
+            "display_name": "Стандарт",
+            "estimate": "₽132-165",
+            "currency": "RUB",
+            "low_estimate": 50,
+            "high_estimate": 100
+        }
+    ]
+}
